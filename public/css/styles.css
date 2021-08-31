@@ -1,0 +1,29 @@
+header{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+h3{
+    font-size: 24px;
+}
+.precios{
+ font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+}
+.descripcion{
+    font-size: 16px;
+}
+.aviso{
+    font-style: italic;
+    text-align: center;
+}
+.buscar{
+    margin-left: 40px;
+    color: #000;
+
+}
