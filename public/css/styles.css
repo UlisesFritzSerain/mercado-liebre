@@ -27,3 +27,55 @@ h3{
     color: #000;
 
 }
+.burguer-menu{
+    text-align: center;
+    display: block;
+    
+    
+}
+
+.fa-bars{
+    margin-left: 150px;
+    color: #ebebeb;
+    font-size: 2em;
+    background-color: #1259c3;
+    background-position: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+footer{
+text-align: center;
+}
+.tarjeta{
+    font-size: 2em;
+    text-align: center;
+}
+.fa-credit-card{
+    display: block;
+    padding-top: 15px;
+    color: #1259c3;
+    padding-bottom: -5px;
+}
+.regalo{
+font-size: 2em
+}
+.fa-gift{
+display: block;
+padding: 10px;
+color: #1259c3 ;
+
+}
+
+.seguridad{
+    font-size: 2em;
+    text-align: center;
+}
+.fa-user-shield{
+    display: block;
+padding: 10px;
+color: #1259c3 ;
+}
+#Copyright{
+    color: #666;
+    opacity: 0.8;
+}
