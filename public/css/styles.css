@@ -45,15 +45,17 @@ section article{
     display: inline-block;
     padding: 15px;
     background-color: white;
+    width: 80%;
+    max-width: 350px;
 
 }
 .contenedor-articulos {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    width: 30%;
-    padding: 15px;
+    
+   
 }
 
 .precios{
@@ -63,23 +65,24 @@ section article{
  /* flex-wrap: nowrap;
  align-items: center; */
  width: 30%;
+justify-content: space-around;
 
 }
 .descuentos{
     font-size: 16px;
     text-align: left;
      color:#39b54a;
-     flex-direction: column;
+     /* flex-direction: column; */
      order: 0;
      width: 70%;
-     
+     justify-content: flex-end;
 
 }
 .descripcion{
     font-size: 16px;
     text-align: left;
     flex-direction: column;
-
+justify-content: start;
 }
 .imagenes{
     display: inline-block;
@@ -87,7 +90,7 @@ section article{
     max-width: 100%;
     width: 150px;
     text-align: center;
-    border-bottom: 1px solid #ebebeb ;
+    /* border-bottom: 1px solid #ebebeb ; */
     /* flex-direction: column; */
 
 }
@@ -100,11 +103,13 @@ flex-direction: column;
 
 
 
+
 }
  .fa-truck{
 color: #39b54a;
 text-align: center;
-margin-top: 25%; 
+margin-top: 25%;
+
 }
 header p {
     font-style: italic;
@@ -196,7 +201,7 @@ color: #1259c3 ;
     }
 }
 
-@media(min-width: 769px){
+@media(min-width: 750px){
 .opciones-ayuda,
 .opciones-inicio{
     display: block;
@@ -206,10 +211,28 @@ color: #1259c3 ;
 }
 section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40%;
+    max-width: 375px;
 }
+}
+@media(min-width:1200px){
+    section article{
+        width: 20%;
+    
+    }
+    .contenedor-articulos{
+        display: flex;
+    }
+    .descuentos{
+    width: 60%;    
+    justify-content: flex-end;
+    }
+    .precios{
+        width: 40%;
+    }
 }
 
-/* main section article i{
+ /* main section article i{ 
     display: block;
     font-size: 16px;
     padding: 5px;
