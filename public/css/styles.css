@@ -190,6 +190,20 @@ color: #1259c3 ;
 .titulos-footer{
     text-decoration: none;
 }
+.section-control{
+    /* display: flex; */
+    /* text-align: center; */
+    margin: auto;
+    padding: 15px;
+}
+.form-nombre{
+    margin: auto;
+    padding: 8px;
+}
+.form-intereses{
+    display: block;
+    padding: 8px;
+}
 
 @media(min-width: 361px){
     .opciones-ayuda,
