@@ -15,6 +15,10 @@ width: 100%;
 height: 100%;
 
 }
+.banner{
+    width: 100%;
+    margin-bottom: 10px;
+}
 a{
     text-decoration: none;
     color: #1259c3;
@@ -196,15 +200,84 @@ color: #1259c3 ;
     margin: auto;
     padding: 15px;
 }
-.form-nombre{
+.form-nombre, .form-usuario, .form-intereses, .form-email, .form-nacimiento, .form-domicilio, .form-perfil, .form-foto, .form-password, .form-confirm-password {
     margin: auto;
     padding: 8px;
 }
+
+
+
+.main-register{
+    background-color: #fff;
+}
+.register-title{
+    padding: 20px;
+}
+.section-control{
+    background-color: #ebebeb;
+    border: 1px solid black;
+    width: 70%;
+   
+}
+
 .form-intereses{
     display: block;
     padding: 8px;
 }
+.form-intereses label{
+margin: 0 5px;
+}
+.form-intereses input{
+    margin: 0 2px;
+}
+.button-enviar{
+background-color: #39b54a;
+padding: 10px;
+border-radius: 5px;
+border: none;
+}
+.button-reset{
+background-color: red;
+padding: 10px;
+border-radius: 5px;
+border: none;
+}
+.button-enviar:hover, .button-reset:hover{
+    box-shadow: 0 0 10px #666;
+}
+.button-reset, .button-enviar{
+    margin-top: 10px;
+}
 
+
+.main-login{
+background-color: #ebebeb;
+}
+
+.login-title{
+    padding: 15px;
+    text-align: left;
+}
+.login-control{
+    padding: 10px;
+}
+.login-control input{
+    width: 50%
+}
+.login-usuario, .login-contraseña{
+    padding: 8px;
+}
+.button-ingresar{
+    width: 50%;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.button-ingresar:hover{
+    box-shadow: 0 0 15px #666;
+}
 @media(min-width: 361px){
     .opciones-ayuda,
     .opciones-inicio{
@@ -228,6 +301,23 @@ section article{
     width: 40%;
     max-width: 375px;
 }
+.register-title{
+    text-align: left;
+    padding: 20px;
+    margin-left: 150px;
+}
+.login-usuario, .login-contraseña{
+    padding: 20px;
+    margin: 10px;
+}
+.button-ingresar{
+    width: 50%;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
 }
 @media(min-width:1200px){
     section article{
@@ -244,6 +334,11 @@ section article{
     .precios{
         width: 40%;
     }
+    .main-login{
+        height: 500px;
+       
+    }
+    
 }
 
  /* main section article i{ 
