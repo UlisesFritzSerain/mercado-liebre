@@ -36,6 +36,7 @@ p{
 h3{
     font-size: 24px;
 }
+
 main{
     width: 90%;
     margin: 0 auto;
@@ -87,6 +88,10 @@ justify-content: space-around;
     text-align: left;
     flex-direction: column;
 justify-content: start;
+
+}
+.descripcion:hover{
+    
 }
 .imagenes{
     display: inline-block;
@@ -277,6 +282,7 @@ background-color: #ebebeb;
 }
 .button-ingresar:hover{
     box-shadow: 0 0 15px #666;
+    background-color: #0022AA;
 }
 @media(min-width: 361px){
     .opciones-ayuda,
@@ -297,10 +303,31 @@ background-color: #ebebeb;
     display: none;
 }
 section article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
     width: 40%;
     max-width: 375px;
 }
+section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0  10px;
+   
+}
+.opciones-ayuda, .opciones-inicio{
+display: flex;
+padding: 5px;
+
+
+}
+.opciones-ayuda li, .opciones-inicio li{
+    padding: 5px;
+   
+} 
+
+
 .register-title{
     text-align: left;
     padding: 20px;
@@ -324,6 +351,24 @@ section article{
         width: 20%;
     
     }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0  10px;
+       
+    }
+    .opciones-ayuda, .opciones-inicio{
+    display: flex;
+    padding: 5px;
+    
+    
+    }
+    .opciones-ayuda li, .opciones-inicio li{
+        padding: 5px;
+       
+    } 
+
+   
     .contenedor-articulos{
         display: flex;
     }
@@ -338,7 +383,19 @@ section article{
         height: 500px;
        
     }
-    
+    .footer-contain{
+        display: flex;
+        height: 150px;
+        align-items: center;
+    }
+    .copy{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
+     color: #EAC926;
+    }
+
 }
 
  /* main section article i{ 
