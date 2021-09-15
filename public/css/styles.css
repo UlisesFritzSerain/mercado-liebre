@@ -52,7 +52,22 @@ section article{
     background-color: white;
     width: 80%;
     max-width: 350px;
+    
+}
+ .descripcion{
+    font-size: 16px;
+    text-align: left;
+    flex-direction: column;
+justify-content: start;
+display: none;
+ transition: all 2s;
+}
+/* section article .descripcion{
+    
+} */
 
+section article:hover .descripcion{
+display: block;
 }
 .contenedor-articulos {
     /* width: 100%; */
@@ -83,16 +98,12 @@ justify-content: space-around;
      justify-content: flex-end;
 
 }
-.descripcion{
-    font-size: 16px;
-    text-align: left;
-    flex-direction: column;
-justify-content: start;
 
-}
-.descripcion:hover{
-    
-}
+ 
+
+
+
+
 .imagenes{
     display: inline-block;
     margin: 0 auto;
@@ -118,8 +129,15 @@ flex-direction: column;
 color: #39b54a;
 text-align: center;
 margin-top: 25%;
+transition: all 2s;
+}
+
+.fa-truck:hover{
+    transform: rotateZ(270deg);
+/* height: 90px; */
 
 }
+
 header p {
     font-style: italic;
     
@@ -279,10 +297,13 @@ background-color: #ebebeb;
     border: none;
     padding: 5px;
     border-radius: 5px;
+    
+    transition: all 1s;
 }
 .button-ingresar:hover{
     box-shadow: 0 0 15px #666;
     background-color: #0022AA;
+    /* transition: background-color: #0022AA 1s; */
 }
 @media(min-width: 361px){
     .opciones-ayuda,
@@ -391,6 +412,9 @@ padding: 5px;
     .copy{
         align-items: flex-end;
         justify-content: center;
+    }
+    .fa-credit-card, .fa-gift, .fa-user-shield{
+transition: all 450ms;
     }
     .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
      color: #EAC926;
