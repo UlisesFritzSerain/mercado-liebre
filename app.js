@@ -16,6 +16,6 @@ app.get("/register", (req, res) =>{
 app.get("/login", (req, res) =>{
     res.sendFile(path.join(__dirname,"/views/login.html"))
 });
-app.listen(3004, () => 
+app.listen(PORT, () => 
     console.log("Servidor corriendo http://localhost:3004/")
 );
