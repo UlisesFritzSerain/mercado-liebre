@@ -109,13 +109,23 @@ opacity: 1;
 section article:hover .fa-truck{
     transform: rotateZ(-90deg);
 }
+
 .fa-truck{
     color: #39b54a;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 5px;
     transition: all 1s;
-    }
-    
+}
+.contenedor-camion{
+        border:1px solid #39b54a;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        left: 85%;
+        }
     
 .precios{
  font-size: 18px;
@@ -129,13 +139,11 @@ justify-content: space-around;
 }
 .descuentos{
     font-size: 16px;
-    text-align: left;
-     color:#39b54a;
-     /* flex-direction: column; */
+    color:#39b54a;
      order: 0;
      width: 70%;
      justify-content: flex-end;
-     /* animation: aumentar 500ms linear infinite alternate; */
+     
 }
 
 
@@ -159,13 +167,7 @@ justify-content: space-around;
     /* flex-direction: column; */
 
 }
-.contenedor-camion{
-border:1px solid #39b54a;
-width: 25px;
-height: 25px;
-border-radius: 50%;
-flex-direction: column;
-}
+
 
 
 
@@ -355,11 +357,15 @@ background-color: #ebebeb;
     .top-nav-bar{
         display: flex;
         justify-content: center;
-        /* align-items: center; */
+        
         }
 }
 
 @media(min-width: 611px){
+header{
+    padding-bottom: 10px;
+}
+
 .opciones-ayuda,
 .opciones-inicio{
     display: block;
@@ -374,15 +380,18 @@ background-color: #ebebeb;
 display: flex;
 justify-content: space-between;
 align-items: center;
+position: relative;
 }
 header p{
 font-size: 16px;
 }
-.barra-busqueda{
-    width: 30%;
+.busqueda-lupa{
+    width: 60%;
+    position: absolute;
+    right: 0px;
 }
 section article{
-    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+   
     width: 40%;
     max-width: 375px;
 }
@@ -425,23 +434,43 @@ padding: 5px;
     border-radius: 5px;
 }
 }
-@media(min-width:1200px){
-    section article{
-        width: 20%;
+@media(min-width: 1239px){
+section article{
+ width: 20%;
     
-    }
-    header .top-nav-bar, header nav{
+}
+header{
+    padding-bottom: 5px;
+}
+header .top-nav-bar, header nav{
         max-width: 1200px;
         margin: auto;
+        padding-bottom: -5px;
+    
     }
     header p{
     font-size: 18px;
+    position: absolute;
+    left: 70%;
+    top: 5px;
+    }
+    .top-nav-bar{
+        display: flex;
+        position: relative;
+    }
+    .busqueda-lupa{
+position: absolute;
+right: 0px;
+
+    }
+    header input{
+        width:35%
     }
     .top-nav-bar button i{
         padding: 3px;
     }
     .top-nav-bar button{
-margin-left: -20px;
+ margin-left: -20px;
     }
     nav{
         display: flex;
@@ -451,8 +480,9 @@ margin-left: -20px;
     }
     .opciones-ayuda, .opciones-inicio{
     display: flex;
-    padding: 5px;
     
+    padding: 5px;
+    top: 15px;
     
     }
     .opciones-ayuda li, .opciones-inicio li{
@@ -485,7 +515,7 @@ margin-left: -20px;
         justify-content: center;
     }
     .fa-credit-card, .fa-gift, .fa-user-shield{
-transition: all 450ms;
+ transition: all 450ms;
     }
     .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
      color: #EAC926;
@@ -493,16 +523,4 @@ transition: all 450ms;
 
 }
 
- /* main section article i{ 
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    } */
+ 
